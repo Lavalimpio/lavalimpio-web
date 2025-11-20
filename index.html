@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LavaLimpio | Lavandería Autoservicio en Ensanche de Vallecas</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="La mejor lavandería autoservicio en Ensanche de Vallecas y Villa de Vallecas. Cerca de La Gavia. Lavadoras 14kg/18kg desde 3€. Abierto 365 días, 07:00-23:00." />
+    <meta name="keywords" content="lavandería vallecas, lavalimpio, lavandería ensanche vallecas, cerca la gavia, lavandería barata madrid, lavar edredones vallecas, metro valdecarros lavandería" />
+    <meta name="author" content="LavaLimpio Vallecas" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="LavaLimpio - Tu Lavandería en Ensanche de Vallecas" />
+    <meta property="og:description" content="Lavadoras y secadoras industriales desde 3€. Calle Eduardo Chillida 223. Abierto todo el año de 07:00 a 23:00. Detergente incluido." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="LavaLimpio Vallecas" />
+
+    <!-- Structured Data (JSON-LD) for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SelfStorage",
+      "name": "LavaLimpio Vallecas",
+      "image": "https://picsum.photos/seed/laundry2/1920/1080",
+      "telephone": "+34 658 63 27 02",
+      "email": "madrid@lavalimpio.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle de Eduardo Chillida, 223, Local 1",
+        "addressLocality": "Villa de Vallecas",
+        "addressRegion": "Madrid",
+        "postalCode": "28051",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.357463,
+        "longitude": -3.592328
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "23:00"
+      },
+      "priceRange": "3€ - 7€",
+      "areaServed": [
+        "Ensanche de Vallecas",
+        "Villa de Vallecas",
+        "Valdecarros",
+        "La Gavia"
+      ],
+      "paymentAccepted": "Cash, Credit Card, Mobile Payment" 
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles for Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['"Outfit"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f8fafc',  // Slate 50 - Clean White/Grey background
+                100: '#f1f5f9', // Slate 100 - Light Steel Grey
+                200: '#fecaca', // Red 200 - Light Red for selection highlights
+                300: '#fca5a5', // Red 300 - Soft Red for gradients
+                400: '#f87171', // Red 400
+                500: '#ef4444', // Red 500
+                600: '#e30613', // Fagor Professional Red (Main Brand Color)
+                700: '#b91c1c', // Darker Red
+                800: '#991b1b',
+                900: '#0f172a', // Slate 900 - Professional Dark/Black
+              },
+              accent: {
+                400: '#009fe3', // Fagor Laundry Cyan/Blue - Tech & Cleanliness
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'blob': 'blob 7s infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e30613; /* Fagor Red */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b91c1c;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-brand-200 selection:text-brand-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
