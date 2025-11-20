@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Mail, Navigation } from 'lucide-react';
+import { MapPin, Clock, Mail, Navigation } from 'lucide-react';
 
 export const LocationSection: React.FC = () => {
   return (
