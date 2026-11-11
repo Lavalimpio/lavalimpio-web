@@ -68,7 +68,7 @@ export const FAQS: FaqItem[] = [
     answer: "Aceptamos tarjetas de crédito y débito, monedas de 1€ y pago móvil mediante app."
   },
   {
-    question: "¿Cuál es el horario?",
-    answer: "Abrimos todos los días del año, incluidos festivos, de 07:00 a 23:00 ininterrumpidamente."
+    question: "¿Cuál es el horario y a qué hora es el último lavado?",
+    answer: "Abrimos los 365 días del año de 07:00 a 23:00 ininterrumpidamente. Dado que el local tiene cierre automático a las 23:00, el último ciclo de lavado o secado debe iniciarse a las 22:20 como máximo para que dé tiempo a completarlo antes del cierre."
   }
 ];
