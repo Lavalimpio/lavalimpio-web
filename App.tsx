@@ -6,12 +6,13 @@ import { HowItWorks } from './components/HowItWorks';
 import { Pricing } from './components/Pricing';
 import { BusinessSection } from './components/BusinessSection';
 import { LocationSection } from './components/LocationSection';
+import { ContactSection } from './components/ContactSection';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#F5F3EF] text-slate-800">
       <Navbar />
       <main className="flex-grow">
         <Hero />
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Pricing />
         <BusinessSection />
         <FAQ />
+        <ContactSection />
         <LocationSection />
       </main>
       <Footer />

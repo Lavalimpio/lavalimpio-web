@@ -12,7 +12,7 @@ export const FEATURES: Feature[] = [
   {
     icon: Droplets,
     title: "Detergente Ecológico",
-    description: "Incluido automáticamente en cada lavado. Hipoalergénico y respetuoso con el medio ambiente."
+    description: "Dosificación automática de detergente hipoalergénico, suavizante y oxígeno líquido en cada ciclo."
   },
   {
     icon: Wifi,
@@ -21,8 +21,8 @@ export const FEATURES: Feature[] = [
   },
   {
     icon: ShieldCheck,
-    title: "Máxima Higiene",
-    description: "Desinfección automática del tambor tras cada uso. Tu ropa siempre en un entorno seguro."
+    title: "Máxima Higiene con Oxígeno Líquido",
+    description: "Desinfección profunda de amplio espectro: el oxígeno líquido elimina el 99,9% de bacterias, ácaros y malos olores, desinfectando tejidos y tambor sin dañar la ropa ni irritar la piel."
   }
 ];
 
@@ -30,34 +30,34 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'wash-14',
     title: "Lavadora 14kg",
-    description: "Perfecta para la colada semanal. ¡Aprovecha nuestras ofertas de mañana!",
-    price: "Desde 3€",
+    description: "Perfecta para la colada semanal con desinfección profunda por oxígeno líquido.",
+    price: "Desde 4€",
     capacity: "14kg",
-    features: ["Detergente incluido", "Suavizante incluido", "Ofertas de mañana", "Económica"],
+    features: ["Detergente ecológico incluido", "Suavizante profesional incluido", "Oxígeno líquido desinfectante", "Ciclo rápido de 30 min"],
     popular: true
   },
   {
     id: 'wash-18',
     title: "Lavadora 18kg",
-    description: "Gigante. Ideal para edredones King Size. ¡Ofertas de mañana disponibles!",
-    price: "Desde 5€",
+    description: "Gran capacidad. Especial para edredones King Size, mantas pesadas y cortinas.",
+    price: "Desde 6€",
     capacity: "18kg",
-    features: ["Detergente incluido", "Suavizante incluido", "Ofertas de mañana", "Máxima capacidad"]
+    features: ["Detergente ecológico incluido", "Suavizante profesional incluido", "Oxígeno líquido desinfectante", "Máxima capacidad 18kg"]
   },
   {
     id: 'dry-18',
     title: "Secadora 18kg",
-    description: "Secado profesional de gran capacidad con tarifas reducidas por la mañana.",
+    description: "Secado industrial rápido con tambor bidireccional anti-arrugas.",
     price: "Desde 3€",
     capacity: "18kg",
-    features: ["15 minutos por ciclo", "Ofertas de mañana", "Anti-arrugas", "Gran volumen"]
+    features: ["15 minutos por ciclo", "Efecto anti-arrugas", "Regulación de temperatura", "Capacidad extra grande"]
   }
 ];
 
 export const FAQS: FaqItem[] = [
   {
     question: "¿Tengo que llevar mi propio detergente?",
-    answer: "No es necesario. Nuestras máquinas dosifican automáticamente detergente, suavizante y oxígeno activo de alta calidad profesional en cada ciclo, incluido en el precio."
+    answer: "No es necesario. Nuestras máquinas dosifican automáticamente detergente ecológico, suavizante y oxígeno líquido desinfectante de alta calidad profesional en cada ciclo, todo incluido en el precio."
   },
   {
     question: "¿Puedo lavar edredones grandes?",

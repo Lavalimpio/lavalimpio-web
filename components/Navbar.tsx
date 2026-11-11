@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, WashingMachine } from 'lucide-react';
+import { Menu, X, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,49 +18,51 @@ export const Navbar: React.FC = () => {
     { name: 'Precios', href: '#precios' },
     { name: 'Empresas', href: '#empresas' },
     { name: 'Ubicación', href: '#ubicacion' },
+    { name: 'Contacto', href: '#contacto' },
   ];
 
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled || isOpen ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+        isScrolled || isOpen ? 'bg-[#F5F3EF]/95 backdrop-blur-md shadow-sm border-b border-[#004A68]/10 py-3.5' : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2 group">
-              <div className="bg-brand-600 p-2 rounded-xl text-white group-hover:bg-brand-500 transition-colors">
-                <WashingMachine size={28} />
-              </div>
-              <span className={`font-display font-bold text-2xl ${isScrolled || isOpen ? 'text-slate-900' : 'text-slate-900 lg:text-white'}`}>
-                Lava<span className="text-brand-600 font-extrabold">Limpio</span>
-              </span>
+            <a href="#" className="flex items-center group py-0.5">
+              <img 
+                src={isScrolled || isOpen ? "/logo.svg" : "/logo-white.svg"} 
+                alt="LavaLimpio Vallecas" 
+                className="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 drop-shadow-sm" 
+              />
             </a>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-7">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium hover:text-brand-500 transition-colors ${
-                  isScrolled ? 'text-slate-600' : 'text-white/90 hover:text-white'
+                className={`text-sm font-semibold transition-colors ${
+                  isScrolled 
+                    ? 'text-[#004A68]/85 hover:text-[#009291]' 
+                    : 'text-white/90 hover:text-[#7dd6d2]'
                 }`}
               >
                 {link.name}
               </a>
             ))}
+
             <a 
-              href="#ubicacion"
-              className={`px-5 py-2.5 rounded-full font-semibold text-sm transition-all transform hover:scale-105 ${
-                isScrolled 
-                  ? 'bg-brand-600 text-white hover:bg-brand-700' 
-                  : 'bg-white text-brand-900 hover:bg-brand-50'
-              }`}
+              href="https://wa.me/34614312278?text=Hola%20LavaLimpio,%20tengo%20una%20consulta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-full font-bold text-sm transition-all transform hover:scale-105 shadow-md bg-[#009291] hover:bg-[#007b7b] text-white inline-flex items-center gap-2 shadow-[#009291]/25"
             >
-              Cómo llegar
+              <MessageCircle size={17} className="fill-current" />
+              WhatsApp
             </a>
           </div>
 
@@ -68,10 +70,10 @@ export const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md ${isScrolled || isOpen ? 'text-slate-900' : 'text-white'}`}
+              className={`p-2 rounded-lg transition-colors ${isScrolled || isOpen ? 'text-[#004A68]' : 'text-white'}`}
               aria-label="Menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
           </div>
         </div>
@@ -79,27 +81,46 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       <div 
-        className={`md:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg transition-all duration-300 ease-in-out origin-top ${
+        className={`md:hidden absolute top-full left-0 w-full bg-[#F5F3EF] border-t border-[#004A68]/10 shadow-xl transition-all duration-300 ease-in-out origin-top ${
           isOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0 h-0 overflow-hidden'
         }`}
       >
-        <div className="px-4 py-6 space-y-4 flex flex-col">
+        <div className="px-6 py-6 space-y-4 flex flex-col">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-lg font-medium text-slate-600 hover:text-brand-600"
+              className="text-lg font-semibold text-[#004A68] hover:text-[#009291] transition-colors"
             >
               {link.name}
             </a>
           ))}
           <a 
+            href="https://wa.me/34614312278?text=Hola%20LavaLimpio,%20tengo%20una%20consulta"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="w-full text-center bg-[#009291] hover:bg-[#007b7b] text-white px-6 py-3.5 rounded-xl font-bold shadow-lg shadow-[#009291]/20 transition-all flex items-center justify-center gap-2"
+          >
+            <MessageCircle size={19} className="fill-current" />
+            Escribir por WhatsApp
+          </a>
+          <a 
+            href="#contacto"
+            onClick={() => setIsOpen(false)}
+            className="w-full text-center bg-[#009291] hover:bg-[#007b7b] text-white px-6 py-3 rounded-xl font-bold shadow-md shadow-[#009291]/20 transition-all flex items-center justify-center gap-2"
+          >
+            <Mail size={18} />
+            Formulario Web
+          </a>
+          <a 
             href="#ubicacion"
             onClick={() => setIsOpen(false)}
-            className="mt-4 w-full text-center bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-brand-200"
+            className="w-full text-center bg-white border border-[#004A68]/20 text-[#004A68] hover:bg-slate-50 px-6 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2"
           >
-            Ir a la Lavandería
+            <MapPin size={18} className="text-[#009291]" />
+            Ver Ubicación
           </a>
         </div>
       </div>

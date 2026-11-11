@@ -3,63 +3,250 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LavaLimpio | Lavandería Autoservicio en Ensanche de Vallecas</title>
+    <title>LavaLimpio | Lavandería Autoservicio en Ensanche de Vallecas (Madrid)</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="canonical" href="https://lavalimpio.com" />
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="La mejor lavandería autoservicio en Ensanche de Vallecas y Villa de Vallecas. Cerca de La Gavia. Lavadoras 14kg/18kg desde 3€. Abierto 365 días, 07:00-23:00." />
-    <meta name="keywords" content="lavandería vallecas, lavalimpio, lavandería ensanche vallecas, cerca la gavia, lavandería barata madrid, lavar edredones vallecas, metro valdecarros lavandería" />
+    <meta name="description" content="Lavandería autoservicio en Ensanche de Vallecas (Calle Eduardo Chillida 223). Lavadoras 14kg (4€) y 18kg (6€) con desinfección por oxígeno líquido. Abierto 365 días de 07:00 a 23:00." />
+    <meta name="keywords" content="lavandería autoservicio vallecas, lavandería ensanche de vallecas, lavalimpio, lavar edredones vallecas, lavandería barata madrid, lavandería villa de vallecas, lavandería cerca la gavia, metro valdecarros lavandería, desinfección oxígeno líquido" />
     <meta name="author" content="LavaLimpio Vallecas" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="LavaLimpio - Tu Lavandería en Ensanche de Vallecas" />
-    <meta property="og:description" content="Lavadoras y secadoras industriales desde 3€. Calle Eduardo Chillida 223. Abierto todo el año de 07:00 a 23:00. Detergente incluido." />
-    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Local SEO Geo Tags for Madrid & Vallecas -->
+    <meta name="geo.region" content="ES-MD" />
+    <meta name="geo.placename" content="Villa de Vallecas, Madrid" />
+    <meta name="geo.position" content="40.357463;-3.592328" />
+    <meta name="ICBM" content="40.357463, -3.592328" />
+
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="LavaLimpio Vallecas | Lavandería Autoservicio con Oxígeno Líquido" />
+    <meta property="og:description" content="Lavadoras industriales 14kg (desde 4€) y 18kg (desde 6€) con desinfección profunda por oxígeno líquido. Calle Eduardo Chillida 223, Ensanche de Vallecas. Abierto 365 días." />
+    <meta property="og:image" content="/hero-lavalimpio.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height=" content="1080" />
+    <meta property="og:image:alt" content="Instalaciones de LavaLimpio en Ensanche de Vallecas" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="LavaLimpio Vallecas" />
 
-    <!-- Structured Data (JSON-LD) for Local SEO -->
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LavaLimpio Vallecas | Lavandería Autoservicio" />
+    <meta name="twitter:description" content="Lavadoras desde 4€ y secadoras desde 3€ con desinfección por oxígeno líquido activo en Calle Eduardo Chillida 223. Abierto todo el año de 07:00 a 23:00." />
+    <meta name="twitter:image" content="/hero-lavalimpio.jpg" />
+
+    <!-- Schema.org Graph for Search Engines & AI Models (Google, Bing, ChatGPT, Perplexity) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SelfStorage",
-      "name": "LavaLimpio Vallecas",
-      "image": "https://picsum.photos/seed/laundry2/1920/1080",
-      "telephone": "+34 658 63 27 02",
-      "email": "madrid@lavalimpio.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle de Eduardo Chillida, 223, Local 1",
-        "addressLocality": "Villa de Vallecas",
-        "addressRegion": "Madrid",
-        "postalCode": "28051",
-        "addressCountry": "ES"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 40.357463,
-        "longitude": -3.592328
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "07:00",
-        "closes": "23:00"
-      },
-      "priceRange": "3€ - 7€",
-      "areaServed": [
-        "Ensanche de Vallecas",
-        "Villa de Vallecas",
-        "Valdecarros",
-        "La Gavia"
-      ],
-      "paymentAccepted": "Cash, Credit Card, Mobile Payment" 
+      "@graph": [
+        {
+          "@type": ["DryCleaningOrLaundry", "LocalBusiness"],
+          "additionalType": "https://en.wikipedia.org/wiki/Laundromat",
+          "@id": "https://lavalimpio.com/#localbusiness",
+          "name": "LavaLimpio Vallecas",
+          "alternateName": ["LavaLimpio", "Lavandería Autoservicio LavaLimpio", "Lavandería Ensanche de Vallecas"],
+          "disambiguatingDescription": "Lavandería autoservicio con lavadoras y secadoras industriales para colada, mantas y edredones.",
+          "serviceType": [
+            "Lavandería autoservicio",
+            "Lavado de edredones y mantas",
+            "Secado rápido industrial",
+            "Desinfección con oxígeno líquido"
+          ],
+          "description": "Lavandería autoservicio de última generación en el Ensanche de Vallecas. Lavadoras profesionales Fagor de 14kg y 18kg y secadoras de 18kg. Sistema de desinfección profunda por oxígeno líquido activo, detergente ecológico y suavizante incluidos automáticamente.",
+          "image": "/hero-lavalimpio.jpg",
+          "logo": "/logo.svg",
+          "telephone": "+34 614 312 278",
+          "email": "madrid@lavalimpio.com",
+          "url": "https://lavalimpio.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle de Eduardo Chillida, 223, Local 1",
+            "addressLocality": "Villa de Vallecas",
+            "addressRegion": "Madrid",
+            "postalCode": "28051",
+            "addressCountry": "ES"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.357463,
+            "longitude": -3.592328
+          },
+          "hasMap": "https://maps.google.com/maps?q=C.+de+Eduardo+Chillida,+223,+Villa+de+Vallecas,+28051+Madrid+(LavaLimpio)",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "07:00",
+            "closes": "23:00"
+          },
+          "priceRange": "3€ - 6€",
+          "currenciesAccepted": "EUR",
+          "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment, Contactless",
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Ensanche de Vallecas"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Villa de Vallecas"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Valdecarros"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "La Gavia"
+            }
+          ],
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Desinfección con oxígeno líquido activo",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Detergente y suavizante ecológico incluidos",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Zona Wi-Fi gratuita",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Fácil aparcamiento exterior",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Central de pago táctil con tarjeta y efectivo",
+              "value": true
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Lavandería",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Lavadora industrial 14kg",
+                  "description": "Colada semanal completa con detergente, suavizante y oxígeno líquido incluidos"
+                },
+                "price": "4.00",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Lavadora industrial 18kg (Edredones King Size)",
+                  "description": "Máxima capacidad para edredones grandes, mantas pesadas y cortinas"
+                },
+                "price": "6.00",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Secadora industrial 18kg",
+                  "description": "Secado rápido y uniforme con efecto antiarrugas por ciclo de 15 minutos"
+                },
+                "price": "3.00",
+                "priceCurrency": "EUR"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://lavalimpio.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Tengo que llevar mi propio detergente a LavaLimpio?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No es necesario llevar ningún producto. Nuestras máquinas industriales dosifican automáticamente detergente ecológico, suavizante profesional y oxígeno líquido desinfectante en cada ciclo, todo incluido en el precio."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué ventajas tiene la desinfección con oxígeno líquido?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El oxígeno líquido activo realiza una desinfección profunda de amplio espectro que elimina el 99,9% de bacterias, virus, ácaros y olores rebeldes, sin desgastar los tejidos ni provocar alergias en pieles sensibles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puedo lavar edredones grandes King Size?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, disponemos de lavadoras de alta capacidad de 18kg diseñadas especialmente para edredones nórdicos King Size, mantas pesadas, fundas y cortinas voluminosas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué métodos de pago se aceptan en la lavandería?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nuestra central de pago acepta tarjetas bancarias (crédito y débito), pago móvil contactless (Google Pay y Apple Pay), monedas y billetes con cambio automático."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuál es el horario y ubicación de LavaLimpio Vallecas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Abrimos los 365 días del año de 07:00 a 23:00 de forma ininterrumpida. Estamos ubicados en Calle de Eduardo Chillida, 223, Local 1, Ensanche de Vallecas (cerca del CC La Gavia y Metro Valdecarros, Madrid)."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://lavalimpio.com/#howto",
+          "name": "Cómo hacer la colada en LavaLimpio Vallecas",
+          "description": "Guía en 3 sencillos pasos para lavar y secar tu colada en lavandería autoservicio.",
+          "totalTime": "PT45M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Carga tu colada",
+              "text": "Elige la lavadora de 14kg o 18kg según el volumen de tu colada, introduce las prendas y cierra bien la puerta.",
+              "position": 1
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Realiza el pago",
+              "text": "Acude a la central de pago táctil, selecciona el número de máquina e introduce el importe con tarjeta, móvil o efectivo.",
+              "position": 2
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Pulsa Iniciar (Start)",
+              "text": "Vuelve a tu lavadora y pulsa Start. El detergente, suavizante y oxígeno líquido desinfectante se añaden automáticamente.",
+              "position": 3
+            }
+          ]
+        }
+      ]
     }
     </script>
 
@@ -81,20 +268,70 @@
               display: ['"Outfit"', 'sans-serif'],
             },
             colors: {
+              petroleo: {
+                DEFAULT: '#004A68',
+                50: '#f0f7fa',
+                100: '#deedf4',
+                200: '#c2dfea',
+                300: '#96cbdd',
+                400: '#62b0cc',
+                500: '#3c96b8',
+                600: '#1b7a9e',
+                700: '#004A68',
+                800: '#003c54',
+                900: '#002f43',
+                950: '#001e2c',
+              },
+              turquesa: {
+                DEFAULT: '#009291',
+                50: '#effaf9',
+                100: '#d5f3f1',
+                200: '#b0e7e4',
+                300: '#7dd6d2',
+                400: '#46beb9',
+                500: '#009291',
+                600: '#007b7b',
+                700: '#026262',
+                800: '#064f50',
+                900: '#094142',
+              },
+              'verde-azulado': {
+                DEFAULT: '#3F8383',
+                50: '#f2f8f8',
+                100: '#e0eff0',
+                200: '#c3e1e2',
+                300: '#9bc8ca',
+                400: '#6baab0',
+                500: '#3F8383',
+                600: '#326a6b',
+                700: '#2b5657',
+                800: '#254748',
+                900: '#223c3d',
+              },
+              'blanco-calido': {
+                DEFAULT: '#F5F3EF',
+                50: '#fbfaf8',
+                100: '#F5F3EF',
+                200: '#eae6de',
+                300: '#ddd6c8',
+                400: '#c7bca7',
+                500: '#ad9e85',
+              },
               brand: {
-                50: '#f8fafc',  // Slate 50 - Clean White/Grey background
-                100: '#f1f5f9', // Slate 100 - Light Steel Grey
-                200: '#fecaca', // Red 200 - Light Red for selection highlights
-                300: '#fca5a5', // Red 300 - Soft Red for gradients
-                400: '#f87171', // Red 400
-                500: '#ef4444', // Red 500
-                600: '#e30613', // Fagor Professional Red (Main Brand Color)
-                700: '#b91c1c', // Darker Red
-                800: '#991b1b',
-                900: '#0f172a', // Slate 900 - Professional Dark/Black
+                50: '#F5F3EF',  // Blanco cálido
+                100: '#e0eff0', // Verde azulado suave
+                200: '#b0e7e4', // Turquesa suave
+                300: '#7dd6d2', // Turquesa claro
+                400: '#3F8383', // Verde azulado complementario
+                500: '#009291', // Turquesa (color del flyer)
+                600: '#004A68', // Azul petróleo (color del logotipo)
+                700: '#003c54', // Petróleo oscuro
+                800: '#002f43',
+                900: '#001e2c', // Petróleo profundo
               },
               accent: {
-                400: '#009fe3', // Fagor Laundry Cyan/Blue - Tech & Cleanliness
+                400: '#009291', // Turquesa
+                500: '#3F8383', // Verde azulado
               }
             },
             animation: {
@@ -123,24 +360,36 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #F5F3EF;
       }
       ::-webkit-scrollbar-thumb {
-        background: #e30613; /* Fagor Red */
+        background: #009291; /* Turquesa */
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #b91c1c;
+        background: #004A68; /* Azul petróleo */
       }
       .glass-panel {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(245, 243, 239, 0.85);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.4);
       }
     </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
 </head>
-  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-brand-200 selection:text-brand-900">
+  <body class="bg-blanco-calido text-slate-800 antialiased selection:bg-turquesa-200 selection:text-petroleo-900">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
