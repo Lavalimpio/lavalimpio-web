@@ -11,7 +11,7 @@ export const HowItWorks: React.FC = () => {
     {
       icon: CreditCard,
       title: "2. Realiza el pago",
-      desc: "Dirígete a la central de pago. Aceptamos efectivo, tarjeta y pago móvil. Selecciona tu número de máquina."
+      desc: "Dirígete a la central de pago. Aceptamos tarjetas, monedas de 1€ y pago móvil por app. Selecciona tu número de máquina."
     },
     {
       icon: PlayCircle,
@@ -73,7 +73,7 @@ export const HowItWorks: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#002f43]/90 via-[#002f43]/30 to-transparent flex items-end p-5">
               <span className="text-[#F5F3EF] font-semibold text-sm">
-                Central de pago rápida: Tarjeta bancaria, móvil o monedas
+                Central de pago rápida: Tarjetas, monedas de 1€ y pago móvil por app
               </span>
             </div>
           </div>

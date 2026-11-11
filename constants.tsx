@@ -64,8 +64,8 @@ export const FAQS: FaqItem[] = [
     answer: "Sí, disponemos de una lavadora especial de 18kg diseñada específicamente para edredones grandes, mantas pesadas y cortinas."
   },
   {
-    question: "¿Aceptáis pago con tarjeta?",
-    answer: "Sí, nuestra central de pago acepta monedas, billetes, tarjetas de crédito/débito y pago móvil (Google Pay / Apple Pay)."
+    question: "¿Qué métodos de pago aceptáis?",
+    answer: "Aceptamos tarjetas de crédito y débito, monedas de 1€ y pago móvil mediante app."
   },
   {
     question: "¿Cuál es el horario?",
