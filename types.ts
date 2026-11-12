@@ -18,6 +18,9 @@ export interface Feature {
   title: string;
   description: string;
   highlight?: string;
+  badge?: string;
+  image?: string;
+  link?: string;
 }
 
 export interface FaqItem {
